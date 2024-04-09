@@ -19,5 +19,5 @@ jobs:
           server: ftp2.shellit.org
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/miika
-          local-dir: ./homepage/index.html
+          server-dir: /public_html/miika/
+          local-dir: ./homepage/
