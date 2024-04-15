@@ -30,7 +30,7 @@ function validIndex(value) {
 }
 
 function update() {
-    document.getElementById('maintext').innerHTML = vaaliteema_array[i_value].text;
+    document.getElementById('maintext').innerHTML = vaaliteema_array[i_value].text + '<br><br><br>Last update: ' + vaaliteema_array[i_value].date;
     document.getElementById('current_title').innerHTML = vaaliteema_array[i_value].title;
     document.getElementById('prev_title').innerHTML = vaaliteema_array[validIndex(i_value + 1)].title;
     document.getElementById('next_title').innerHTML = vaaliteema_array[validIndex(i_value - 1)].title;
@@ -43,9 +43,18 @@ function update() {
 
 let vaaliteema_array = [
     {
-        'date': '2.4.2024',
+        'date': '15.4.2024',
         'title': 'Eurovaalit 2024',
-        'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida auctor scelerisque. Aliquam sodales metus quis nunc bibendum mollis. Sed malesuada, neque eget dignissim placerat, lacus arcu condimentum purus, in sagittis lorem odio nec orci. Aliquam condimentum molestie tortor pellentesque ultricies. Proin scelerisque neque turpis, quis ultricies lacus gravida ac. Praesent interdum leo quis lobortis vehicula. Aenean sit amet dolor est. Mauris quis ante diam. Vivamus elit dolor, convallis ut metus vel, rutrum imperdiet nibh. Fusce mattis, sem et feugiat pretium, massa nisl hendrerit est, quis ultrices libero nunc non elit. Suspendisse dolor libero, viverra vel porttitor id, ornare consequat ante. Sed bibendum pharetra erat, quis fringilla velit bibendum in. Aenean at lorem at leo volutpat sodales. Phasellus blandit rhoncus turpis posuere mattis. Proin finibus sapien sapien, at fermentum nisi hendrerit eget. Duis ultrices malesuada lorem in accumsan. Suspendisse nec volutpat lacus. Donec lacus tellus, viverra vel ligula consectetur, vehicula vestibulum ex. Proin diam nisi, semper quis lacinia ac, gravida condimentum lacus. Phasellus efficitur sit amet dolor quis efficitur. Nunc sollicitudin varius ipsum, a ultricies tortor tincidunt in. Sed sed eros semper, aliquam magna in, ultrices justo. Fusce accumsan erat at quam consectetur, vitae facilisis ante dignissim. Duis quis ullamcorper sem. Nullam feugiat congue sapien, quis imperdiet justo. In ac neque dictum, congue ligula eu, bibendum elit. Cras et tortor consequat, molestie metus et, tempor turpis. Aenean ut magna ac odio lobortis dictum nec non orci. Sed lectus quam, consectetur a sapien ac, volutpat ornare velit. Donec elementum elit vitae leo dignissim vestibulum. Maecenas condimentum elementum elit sed porta. Suspendisse dictum ante et mauris commodo sagittis. Nunc efficitur at dui nec sollicitudin. Mauris accumsan vitae ipsum quis porta. Sed nec odio diam. Fusce vestibulum semper leo ut consectetur. Morbi nisi nibh, pulvinar eget mattis eget, maximus id erat. Sed porttitor est quis dapibus facilisis. In eu sagittis justo. Aenean elit turpis, finibus a felis a, fermentum eleifend orci. Etiam eget efficitur diam. Vivamus nec felis eu purus interdum consectetur. Phasellus sed magna lacinia, pretium ligula aliquet, pharetra eros. In velit nisi, egestas lobortis gravida ac, consectetur eleifend lorem. Duis lacinia imperdiet lectus ut rhoncus. Ut ac felis sed odio lobortis viverra nec vitae sapien. Etiam ac sapien felis. In porta, nunc sed pulvinar eleifend, nisi mauris semper eros, id auctor justo libero in lectus. Pellentesque gravida tristique sagittis. Mauris quis porttitor erat. Sed pretium laoreet purus a tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu erat finibus, maximus dui quis, porttitor nulla.'
+        'text': '1. Euroopan yhtenäisyys:<br>' +
+            'Eurooppa tarvitsee yhtenäisen rajapolitiikan jotta rajan ylittäminen ja turvapaikan hakeminen olisi yhtä helppoa tai vaikeaa riippumatta minkä maan raja on kyseessä. Myöskin olisi hyvä että turvapaikkojen aiheuttamaa taakkaa jaettaisiin taisesti eu maiden kesken. Tosin ihan kaikkea ei kannatta yhdistää, esimerkiksi uudet pullonkorkit, vesiputki direktiivi taikka suunnitteilla oleva pullojen kierrätys systeemin pakottaminen juuri tietynlaiseksi. Euroopan myös tulisi yhtenäisesti tukea ukrainaa vielä enemmän.<br><br>' +
+            '2. Puolustusteollisuus ylös:<br>' +
+            'Eurooppassa pitäisi käynnistää ja tukea puolustusteollisuutta sillä nykyinenen maailmantilanne vaatii sitä. Jos meillä ei ole lähettää tarvikkeita ukrainaan niin herää kysymys, onko meillä riittävästi edes itsemme puolustamiseen? Helppo tapa lisätä puolustusteollisuutta olisi mahdollistaa tällaisen toiminnan tukirahoittaminen.<br><br>' +
+            '3. Vastuullista rahankäyttöä:<br>' +
+            'Koen tärkeänä että rahankäytössä oltaisiin vastuullisia. Vaikka en suoraan kiellä ideaa yhteislainoista, on niitten kohteiden oltava jotain mikä selvästi vaatii yhteislainan eikä sellaisia minkä jokainen maa voisi halutessaan itse ottaa jos kokee sen tarpeellisena. Samoin maataloustukimalli vaatisi uudistamista, sillä nykyinen malli vaikuttaa tehottomalta ja eriarvoistavalta.<br><br>' +
+            'Muita kantoja lyhyesti:<br>' +
+            'Euroopan hiilivoimalat korvataan ydinvoimalla, suomen oikeus alkon monopoliin on purettava, nuuska ja kannabis on laillistettava kaikissa euroopan maissa.<br><br>' +
+            'Liberaalipuolueen <a href="https://liberaalipuolue.fi/europarlamenttivaalit-2024/">Eurovaaliohjelma</a>'
+
     },
     {
         'date': '2.4.2024',
